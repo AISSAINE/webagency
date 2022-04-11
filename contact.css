@@ -104,20 +104,16 @@ form input, textarea::placeholder {
             padding-top: 2rem;
             background-color: rgb(184, 224, 238);
             display: flex;
-
             }
 
-
             .formulaire {
-
                 position: relative;
                 margin-top: 2rem;
                 margin-left: 8rem;
                 align-self: center;
-
-
                 }
 
         footer {
             font-size: x-small;
-        }
+            }
+    }
