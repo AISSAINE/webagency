@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="projets.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <header class="container">
+        
+        <div>
+            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 57" width="60" height="57"><defs><clipPath clipPathUnits="userSpaceOnUse" id="cp1"><path d="m-224-19h2560v4016h-2560z"/></clipPath><image  width="60" height="57" id="img1" href="data:image/png;base64,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"/></defs><style></style><g clip-path="url(#cp1)"><use  href="#img1" x="0" y="0"/></g></svg>
+            
+            <h1>WEBAGENCY</h1>
+        </div>
+
+        <div id="menu">
+            <ul>
+    
+              <li><a href="#"><img src="/images/bars.svg" alt="bars de menu"></a>
+                <ul>
+                    <li><a href="#">Acceuil</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+              </li>
+    
+            </ul>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Acceuil</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+
+    <Div class="slider">
+
+        <input type="radio" id="slide-1" name="slider-nav" checked>
+        <input type="radio" id="slide-2" name="slider-nav">
+                    
+        <div class="slider-nav left">
+            <img src="/images/Ellipse 4.svg" alt="">
+        </div>
+
+        <div class="slider-nav left">
+            <label for="slide-2">></label>
+            <label for="slide-3">></label>
+        </div>
+
+        <div class="slider-nav right">
+            <img id="slide-right" src="/images/Ellipse 4.svg" alt="">
+        </div>
+
+        <div class="slider-nav right">
+            <label for="slide-1">></label>
+            <label for="slide-2">></label>
+        </div>        
+
+        <div class="slides">
+            <div class="slide">
+                
+                <img 
+                src="/images/photo_slide_1.svg" 
+                                    
+                alt="fille">
+                
+                <div class="body">
+                    <h2><span>WEBAGENCY :</span> L'AGENCE DE TOUS VOS PROJETS !</h2>
+                    <h5>Vous avez un projet web ? la WebAgency vous aide à le réaliser</h5>
+                    <div><a href="#">Plus d'info</a></div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img 
+                    src="/images/photo_slide_2.svg" 
+                    size="100vw"                    
+                    alt="">
+                <div class="body">
+                    <h2><span>WEBAGENCY :</span> L'AGENCE A L'ECOUTE DE VOS BESOINS !</h2>
+                    <h5>Un besoin, une idée ... La WebAgency vous apporte conseils !</h5>
+                    <div><a href="#">Plus d'info</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="progress p1"></div>
+        <div class="progress p2"></div>
+    </Div>
+
+
+    <div class="services">
+
+        <h1 class="item1">NOS SERVICES</h1>
+
+        <div class="separateur">
+            <div class="tri"></div>
+            <img src="/images/Ellipse 1.svg" alt="Ellipse">
+            <div class="tri"></div>
+        </div>
+
+        <p class="item1">Depuis plusieurs années, la WebAgency vous accompagne dans la définition et la compréhension de vos projets, de la conception graphique et technique au web-marketing </p>
+
+        <section>
+            <img id="ecran" src="/images/photo_services.svg" alt="écran">
+    
+            <div class="services-liste">
+                <div class="icone">
+                    <img id="img1" src="/images/Ellipse 2.png" alt="cercle">
+                    <img id="img2" src="/images/Ellipse 1.png" alt="Ellipse">
+                    <img id="img3" src="/images/chart-line.png" alt="icone">
+                </div>
+    
+                <div>
+                    <h3>UX Design</h3>
+                    <p>Plateformes, Web-applictions, Sites transactionnels, E-commerce & Marchants, sites vitrines et médias conçus et pensés pour une utilisation optimale.</p>
+                </div>
+    
+                <div class="icone">
+                    <img id="img1" src="/images/Ellipse 2.png" alt="cercle">
+                    <img id="img2" src="/images/Ellipse 1.png" alt="Ellipse">
+                    <img id="img3" src="/images/cubes.png" alt="cubes">
+                </div>
+    
+                <div>
+                    <h3>UI Design</h3>
+                    <p>Ergonomie et facilité de navigation des interfaces pour sites vitrines, E-commerces, plateformes, Web applications et Site média...</p>
+                </div>
+                
+                <div class="icone">
+                    <img id="img1" src="/images/Ellipse 2.png" alt="cercle">
+                    <img id="img2" src="/images/Ellipse 1.png" alt="Ellipse">
+                    <img id="img3" src="/images/chart-pie.png" alt="cubes">
+                </div>
+    
+                <div>
+                    <h3>SEO - Search Engine Optimization</h3>
+                    <p>Où l'art d'optimser la visibilité et le positionnement de sites web par les moteurs de recherche.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+    <div class="projets">
+
+        <h1 class="item1">NOS PROJETS</h1>
+
+        <div class="separateur">
+            <div class="tri"></div>
+            <img src="/images/Ellipse 1.svg" alt="Ellipse">
+            <div class="tri"></div>
+        </div>
+        <p class="item1">Voici quelques projets qui ne sont pas le fait du hasard mais le fruit de notre imagination !</p>
+        <p class="item1">Nous donnons vie à vos idées</p>
+
+        <div class="projets-nav">
+            <ul>
+                <li ><a id="radus-left" href="#">Tous les travaux</a></li>
+                <li><a href="#">Créatives</a></li>
+                <li><a href="#">Corporate</a></li>
+                <li><a id="radus-right" href="#">Portfolio</a></li>
+            </ul>
+        </div>
+
+        <article>
+            <div class="projets-img">
+                <Div class="img-w">
+                    <img id="img11" src="/images/photo1.svg" alt="">
+                </Div>
+                <div class="oeil-w">
+                    <div class="oeil">
+                        <a href="#" target="-blank"><img id="img10" src="/images/oeil.svg" alt="oeil"></a>
+                        <p><strong>Opti'Kids</strong><br>Site marchand de lunettes</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projets-img">
+                <Div class="img-w">
+                    <img id="img12" src="/images/photo2.svg" alt="">
+                </Div>
+                <div class="oeil-w">
+                    <div class="oeil">
+                        <a href="#" target="-blank"><img id="img10" src="/images/oeil.svg" alt="oeil"></a>
+                        <p><strong>Box Origami</strong><br>Blog amateur sur l'origami</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projets-img">
+                <Div class="img-w">
+                    <img id="img13" src="/images/photo3.svg" alt="">
+                </Div>
+                <div class="oeil-w">
+                    <div class="oeil">
+                        <a href="#" target="-blank"><img id="img10" src="/images/oeil.svg" alt="oeil"></a>
+                        <p><strong>Original Pompadour</strong><br>La coupe banane depuis 1950</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projets-img">
+                <Div class="img-w">
+                    <img id="img14" src="/images/photo4.svg" alt="">
+                </Div>
+                <div class="oeil-w">
+                    <div class="oeil">
+                        <a href="#" target="-blank"><img id="img10" src="/images/oeil.svg" alt="oeil"></a>
+                        <p><strong>Blog géométrie spatiale</strong><br>Cours de géométrie dans l'espace!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projets-img">
+                <Div class="img-w">
+                    <img id="img15" src="/images/photo5.svg" alt="">
+                </Div>
+                <div class="oeil-w">
+                    <div class="oeil">
+                        <a href="#" target="-blank"><img id="img10" src="/images/oeil.svg" alt="oeil"></a>
+                        <p><strong>Shopping Bag</strong><br>Site E-commerce</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projets-img">
+                <Div class="img-w">
+                    <img id="img16" src="/images/photo6.svg" alt="">
+                </Div>
+                <div class="oeil-w">
+                    <div class="oeil">
+                        <a href="#" target="-blank"><img id="img10" src="/images/oeil.svg" alt="oeil"></a>
+                        <p><strong>Art'chitecte</strong><br>Cabinet d'architecte de luxe</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projets-img">
+                <Div class="img-w">
+                    <img id="img17" src="/images/photo7.svg" alt="">
+                </Div>
+                <div class="oeil-w">
+                    <div class="oeil">
+                        <a href="#" target="-blank"><img id="img10" src="/images/oeil.svg" alt="oeil"></a>
+                        <p><strong>Art'Design</strong><br>L'art de gesign</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projets-img">
+                <Div class="img-w">
+                    <img id="img18" src="/images/photo8.svg" alt="">
+                </Div>
+                <div class="oeil-w">
+                    <div class="oeil">
+                        <a href="#" target="-blank"><img id="img10" src="/images/oeil.svg" alt="oeil"></a>
+                        <p><strong>Be Thème</strong><br>Bureautique & Organisation</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </div>
+
+
+    <div class="contact">
+        <div class="carte">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2890.0729230549746!2d1.4001278154955097!3d43.58419737912377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aeba53a739cc1d%3A0xd924d2969bea1bdb!2s150%20Rue%20Nicolas%20Louis%20Vauquelin%2C%2031100%20Toulouse!5e0!3m2!1sfr!2sfr!4v1649669673061!5m2!1sfr!2sfr" width="2081" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="formulaire">
+
+            <h2>Contact Info</h2>
+            <h4>WebAgency SAS</h4>
+            <p>150 rue Nicolas louis Vauquelin 31100 Toulouse</p>
+            <p>Tèl : 05 34 61 26 23</p>
+
+                <br>
+
+            <form action="#">
+
+                <label for="nom"></label>
+                <input type="text" id="nom" placeholder="Nom">
+
+                <label for="prenom"></label>
+                <input type="text" id="prenom" placeholder="Prénom">
+
+                <label for="sujet"></label>
+                <input type="text" id="sujet" placeholder="Sujet">
+
+                <label for="msg"></label>
+                <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Message" required></textarea>
+                <input type="submit" value="Envoyer le message">
+            </form>
+        
+        </div>
+    </div>
+
+
+    <footer class="footer">
+
+        <p>Tous droits réservés WebAgency - Design : Némo - Intération Your NAME</p>
+
+
+    </footer>
+    
+</body>
+</html>

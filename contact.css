@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contact {
+    max-width: 2081px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    background-color: rgb(184, 224, 238);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    }
+
+
+.carte {
+
+    filter: opacity(50%);
+    -webkit-filter: opacity(50%);
+    }
+    .carte:hover {
+    filter: opacity(100%);
+    -webkit-filter: opacity(100%);
+    }
+
+    .carte iframe {
+        width: 100%;
+    }
+
+
+/*formulaire*/
+.formulaire {
+    padding: 2rem 1rem 2rem 1rem;
+    font-size: small;
+    max-width: 347px;
+    background-color: rgba(229, 245, 248, 0.9);
+    align-self: flex-end;
+    position: absolute;
+    bottom:2rem;
+    right: 4rem;
+    }
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    }
+
+input , textarea{
+    padding: 3px;
+    }
+
+input[type="submit"]{  
+    background-color: rgb(78, 177, 213);
+    color: white;
+    padding: 5px;
+    width: 140px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 1rem;
+    }
+
+
+/*
+textarea {
+    height : 142px;
+    padding-top: 60px
+    }
+
+form input, textarea::placeholder {
+    color: rgba(13, 65, 92, 255);
+    font-size: 1rem;
+    text-align: center;
+    }
+   */
+
+
+/*footer*/
+
+.footer {
+    padding: 2rem 0 2rem 0;
+    display: flex;
+    justify-content: center;
+    }
+
+
+
+
+    @media (max-width: 760px) {
+        footer {
+            font-size: small;
+        }
+
+    @media (max-width: 570px) {
+
+        .contact {
+            padding-bottom: 2rem;
+            padding-top: 2rem;
+            background-color: rgb(184, 224, 238);
+            display: flex;
+
+            }
+
+
+            .formulaire {
+
+                position: relative;
+                margin-top: 2rem;
+                margin-left: 8rem;
+                align-self: center;
+
+
+                }
+
+        footer {
+            font-size: x-small;
+        }

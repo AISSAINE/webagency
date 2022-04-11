@@ -1,0 +1,113 @@
+
+
+
+
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .services{
+        max-width: 2081px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .services .item1 {
+        text-align: center;
+        margin: 2rem 5rem 2rem 5rem;
+    }
+
+    .separateur {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        column-gap: 5px;
+    }
+
+    .tri{
+        width: 100px;
+        border-bottom: 1px solid grey;
+        margin-bottom: 10px;
+    }
+
+    section{
+    
+        margin: 4rem 2rem 3rem 2rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        column-gap: 6rem;
+    }
+
+
+    section .services-liste{
+        min-width: 400px;
+        display: grid;
+        padding: 10px;
+        grid-template-columns: 110px 1fr;
+        grid-template-rows: 100px 100px 100px;
+        row-gap: 2rem;
+        align-content: center;
+        }
+
+    .icone{
+        height: 80px;
+        position: relative;
+    }
+
+    #img2{
+        position: absolute;
+        bottom: 30px;
+        left: 60px;
+    }
+
+    #img3{
+        position: absolute;
+        bottom: 30px;
+        left: 20px;
+    }
+
+    @media (max-width: 1400px) {
+        section{
+            column-gap: 3rem;
+        }
+        #ecran {
+            width: 400px;
+        }
+    }
+
+    @media (max-width: 760px) {
+        .services{
+            font-size: small;
+        }
+        
+        section{
+            flex-wrap: wrap;
+        }
+        section .services-liste{
+        row-gap: .2rem;
+            }
+    }
+
+    @media (max-width: 570px) {
+        section{
+            flex-wrap: wrap;
+        }
+        .services{
+            font-size: xx-small;
+        }
+        section .services-liste{
+            min-width: 250px;
+        }
+
+        #ecran {
+            width: 350px;
+        }
+    }
